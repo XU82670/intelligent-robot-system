@@ -1,0 +1,31 @@
+{
+  "motion": {
+    "wheel_radius": 0.05,
+    "wheel_base": 0.30,
+    "max_linear_speed": 0.8,
+    "max_angular_speed": 1.5,
+    "pid": { "kp": 1.2, "ki": 0.05, "kd": 0.15 }
+  },
+  "perception": {
+    "detector": "mock",
+    "lidar_rays": 36,
+    "lidar_max_range": 5.0
+  },
+  "navigation": {
+    "grid_resolution": 0.1,
+    "map_size": 50,
+    "avoid_range": 0.25
+  },
+  "decision": {
+    "goal_tolerance": 0.15,
+    "max_retries": 3
+  },
+  "data": {
+    "log_dir": "logs",
+    "dataset_dir": "data/datasets"
+  },
+  "hmi": {
+    "http_host": "127.0.0.1",
+    "http_port": 8080
+  }
+}
