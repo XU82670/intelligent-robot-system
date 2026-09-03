@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelligent-robot-system"
+version = "1.0.0"
+description = "智能机器人系统：感知-决策-规划-控制-交互 分层架构（毕业设计项目）"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "毕业设计" }]
+keywords = ["robot", "navigation", "path-planning", "pid", "state-machine", "slam"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.optional-dependencies]
+perception = ["numpy", "opencv-python"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["intelligent_robot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
