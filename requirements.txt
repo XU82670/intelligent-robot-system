@@ -1,0 +1,9 @@
+# 核心运行依赖：本项目核心算法纯标准库实现，无需额外安装即可运行。
+# 以下为可选增强依赖：
+
+# 感知模块：真实相机目标检测（SimpleColorDetector / YoloDetector）
+# numpy>=1.24
+# opencv-python>=4.8
+
+# 开发与测试
+# pytest>=7.0
